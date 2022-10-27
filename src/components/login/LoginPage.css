@@ -11,3 +11,25 @@ body {
 .logo{
     max-height: 70px;
 }
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: #3c354e;
+}
+input[type="date"]::before {
+    content: attr(placeholder);
+    position: absolute;
+    color: #999999;
+  }
+  
+  input[type="date"] {
+    color: #ffffff;
+  }
+  
+  input[type="date"]:focus,
+  input[type="date"]:valid {
+    color: #cfcfcf;
+  }
+  
+  input[type="date"]:focus::before,
+  input[type="date"]:valid::before {
+    content: "";
+  }
